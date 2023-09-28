@@ -1,0 +1,170 @@
+:root {
+  --main-font: Lato, sans-serif;
+  --secondary-font: Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  color: black;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+div {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*gorna sekcja, elementy wszystkich podstron*/
+
+.navigation {
+  margin-top: 80px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 80px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+.contact a {
+  margin-bottom: 10px;
+}
+
+.name_company {
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.navigation_menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 1);
+  min-height: 98px;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  list-style: none;
+}
+
+.navigation_menu li {
+  font-family: inherit;
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+  width: 160px;
+  height: 66px;
+  text-align: center;
+  border: none;
+  border-right: 1px solid rgb(60, 51, 128);
+  cursor: pointer;
+}
+
+.navigation_menu li:hover,
+.navigation_menu li:focus {
+  color: rgb(60, 51, 128);
+  background-color: rgb(234, 247, 248);
+}
+
+/*srodkowa sekcja*/
+
+.main-picture {
+  background-image: linear-gradient(
+    0deg,
+    rgba(1, 33, 69, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  text-align: center;
+}
+
+.main-picture img {
+  width: 988px;
+  height: auto;
+  transition: 0.4s;
+  transform: scale(1.02) rotate(0deg);
+}
+
+.main-picture img:hover {
+  transform: scale(1.04) rotate(2deg);
+}
+
+/* strona about */
+.peter_info {
+  display: flex;
+  margin-top: 60px;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(241, 241, 241);
+}
+
+.peter_photo {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.peter_start {
+  text-align: justify;
+  line-height: 1.9;
+  padding-left: 80px;
+  padding-right: 120px;
+}
+
+.peter_kedziak {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.peter_experiences {
+  background-color: rgb(241, 241, 241);
+}
+
+.work_experiences {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 430px;
+}
+
+.together {
+  background-color: rgb(196, 196, 196);
+  display: flex;
+  flex-direction: row;
+  row-gap: 40px;
+  margin: 20px 60px 20px 0px;
+  padding-bottom: 20px;
+  border-top-right-radius: 44px;
+  border-bottom-right-radius: 44px;
+}
+
+.years {
+  padding-top: 40px;
+  padding-left: 40px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  min-width: 260px;
+}
+
+.experiences {
+  margin-left: 80px;
+}
